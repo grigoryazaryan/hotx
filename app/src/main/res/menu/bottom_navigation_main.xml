@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_profile"
+        android:enabled="true"
+        android:icon="@drawable/ic_user_settings"
+        android:title="@string/profile"
+        app:showAsAction="ifRoom|withText"/>
+    <item
+        android:id="@+id/action_categories"
+        android:enabled="true"
+        android:icon="@drawable/ic_categories"
+        android:title="@string/categories"
+        app:showAsAction="ifRoom|withText"/>
+    <item
+        android:id="@+id/action_search"
+        android:enabled="true"
+        android:icon="@drawable/ic_search"
+        android:title="@string/search"
+        app:showAsAction="ifRoom|withText"/>
+    <item
+        android:id="@+id/action_recommended"
+        android:enabled="true"
+        android:icon="@drawable/ic_tits"
+        android:title="@string/selected"
+        app:showAsAction="ifRoom|withText"/>
+    <item
+        android:id="@+id/action_stars_all"
+        android:enabled="true"
+        android:icon="@drawable/ic_pornstar"
+        android:title="@string/stars"
+        app:showAsAction="ifRoom|withText"/>
+</menu>

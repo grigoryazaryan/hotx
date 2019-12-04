@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/ecstasy</color>
+    <color name="colorPrimaryDark">@color/tahiti_gold</color>
+    <color name="colorAccent">@color/tahiti_gold</color>
+
+    <color name="activity_background">#13191b</color>
+    <color name="grey">#263238</color>
+    <color name="grey_light">#2d3c41</color>
+    <color name="dark">#212121</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#d50000</color>
+    <color name="inactive">#6C7A89</color>
+    <color name="burnt_orange">#D35400</color>
+    <color name="tahiti_gold">#E87E04</color>
+    <color name="ecstasy">#F9690E</color>
+
+    <color name="text_light">@color/white</color>
+    <color name="text_dark">@color/dark</color>
+</resources>

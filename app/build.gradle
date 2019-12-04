@@ -1,0 +1,116 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'io.objectbox'
+apply plugin: 'io.fabric'
+
+def solidVersion = '2.0.3'
+def nav_version = "1.0.0"
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "app.hotx"
+        minSdkVersion 17
+        targetSdkVersion 28
+        versionCode 39
+        versionName "1.4.12"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled = true
+        vectorDrawables.useSupportLibrary = true
+    }
+    buildTypes {
+        release {
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField "String", "serverLink", "\"https://www.zzz\""
+        }
+        debug {
+            buildConfigField "String", "serverLink", "\"https://dev.www.zzz\""
+        }
+    }
+    flavorDimensions "default"
+    productFlavors {
+        manager {
+            applicationIdSuffix ".manager"
+            versionNameSuffix "-manager"
+            resValue "string", "app_name", "Manager"
+            resValue "string", "file_provider_authority", "hotx.app.file_provider"
+        }
+        user {
+            applicationIdSuffix ".user"
+            versionNameSuffix "-user"
+            resValue "string", "app_name", "HotX"
+            resValue "string", "file_provider_authority", "hotx.app.file_provider.user"
+        }
+    }
+    android.applicationVariants.all { variant ->
+        variant.outputs.all {
+            outputFileName = "${variant.versionCode}.apk"
+        }
+    }
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.0.1'
+//    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.1.0"
+//    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.1.0"
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta3'
+    //firebase
+    implementation 'com.google.firebase:firebase-core:16.0.8'
+    implementation 'com.crashlytics.sdk.android:crashlytics:2.9.9'
+    //flexible container
+    implementation 'com.google.android:flexbox:0.3.2'
+    //retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+    // Retrofit Scalars Converter
+    implementation 'com.squareup.retrofit2:converter-scalars:2.3.0'
+    //Rx2
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'
+    implementation 'io.reactivex.rxjava2:rxjava:2.2.0'
+    //gif player
+    implementation("com.github.bumptech.glide:glide:4.9.0") {
+        exclude group: "com.android.support"
+    }
+    //dagger 2
+    implementation 'com.google.dagger:dagger-android:2.20'
+//    implementation 'com.google.dagger:dagger-android-support:2.20' // if you use the support libraries
+    annotationProcessor 'com.google.dagger:dagger-android-processor:2.20'
+    annotationProcessor 'com.google.dagger:dagger-compiler:2.20'
+    kapt 'com.google.dagger:dagger-android-processor:2.20'
+    kapt 'com.google.dagger:dagger-compiler:2.20'
+    //java stream
+    implementation "info.android15.solid:streams:$solidVersion"
+    implementation "info.android15.solid:collections:$solidVersion"
+    //video player
+    implementation 'com.google.android.exoplayer:exoplayer:2.9.3'
+    //reddit api
+
+//    implementation "io.objectbox:objectbox-kotlin:$objectboxVersion"
+
+    implementation "net.dean.jraw:JRAW:1.1.0"
+    //yandex money
+    implementation 'com.yandex.money.api:yandex-money-sdk-android:4.1.0'
+
+    implementation "android.arch.navigation:navigation-fragment:$nav_version" // use -ktx for Kotlin
+    implementation "android.arch.navigation:navigation-ui:$nav_version" // use -ktx for Kotlin
+
+//    testImplementation 'org.mockito:mockito-core:2.8.9'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+
+    //    implementation "com.github.TorrentStream:TorrentStream-Android:2.5.0"
+    //    implementation 'com.frostwire:jlibtorrent:1.2.0.16'
+}
+apply plugin: 'com.google.gms.google-services'

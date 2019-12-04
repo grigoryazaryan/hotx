@@ -1,0 +1,71 @@
+<resources>
+
+    <string name="favorites">Favorites</string>
+    <string name="stars">Stars</string>
+    <string name="selected">Selected</string>
+    <string name="watch_later">Watch later</string>
+    <string name="recent">History</string>
+    <string name="main">Main</string>
+    <string name="profile">Profile</string>
+    <string name="search">Search</string>
+    <string name="filter">Filter</string>
+    <string name="download">Download</string>
+    <string name="share">Share</string>
+    <string name="apply">Apply</string>
+    <string name="cancel">Cancel</string>
+    <string name="all">All</string>
+    <string name="related">Related</string>
+    <string name="info">Info</string>
+    <string name="category">Category</string>
+    <string name="categories">Categories</string>
+    <string name="filters">Filters</string>
+    <string name="quality">Quality</string>
+    <string name="hd_only">HD only</string>
+    <string name="order">Order</string>
+    <string name="production">Production</string>
+    <string name="professional">Professional</string>
+    <string name="homemade">Homemade</string>
+    <string name="duration">Duration</string>
+    <string name="tags">Tags</string>
+    <string name="tag">Tag</string>
+    <string name="pornstars">Pornstars</string>
+    <string name="star">Star</string>
+    <string name="reset_pin">Reset</string>
+    <string name="added_on">Added on: </string>
+    <string name="approved_on">Approved on: </string>
+
+    <string name="recently_featured">Recently Featured</string>
+    <string name="most_recent">Most Recent</string>
+    <string name="top_rated">Top Rated</string>
+    <string name="hottest">Hottest</string>
+    <string name="most_viewed">Most Viewed</string>
+    <string name="newest">Newest</string>
+    <string name="longest">Longest</string>
+
+    <string name="today">Today</string>
+    <string name="week">Week</string>
+    <string name="month">Month</string>
+
+    <!--hints-->
+    <string name="use_password">Use password</string>
+    <string name="auto_fullscreen">Auto fullscreen</string>
+    <string name="fast_forward">Fast forward</string>
+    <string name="forward">Forward</string>
+    <string name="rewind">Rewind</string>
+    <string name="enter_password">Enter password</string>
+    <string name="about">About</string>
+    <string name="version">Version: %1$s</string>
+    <string name="recommended_videos_will_be_selected">Recommended videos will be selected based on your views and likes</string>
+    <string name="update_available">Update available</string>
+    <string name="download_now">Download now?</string>
+    <string name="something_went_wrong">Something went wrong..</string>
+    <string name="reload">Reload</string>
+    <string name="vr_video_not_supported_yet">Sorry. VR video not supported yet..</string>
+    <string name="video_type_not_supported_yet">Sorry. This video type not supported yet..</string>
+    <string name="video_has_been_removed">Video has been removed at the request of Copyright Owner.</string>
+    <string name="premium_content_not_supported">Sorry. This is premium content. Not supported yet..</string>
+    <string name="sent_from_hotx">Sent from HotX</string>
+
+
+
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bottom_nav_bar_height">56dp</dimen>
+    <dimen name="video_player_view_height">220dp</dimen>
+    <dimen name="video_player_view_height_collapsed">120dp</dimen>
+    <dimen name="dropdown_options_selector_content_width">70dp</dimen>
+    <dimen name="categories_spinner_height">70dp</dimen>
+    <dimen name="video_list_item_height">120dp</dimen>
+    <dimen name="categories_list_item_height">215dp</dimen>
+    <dimen name="star_photo_height">@dimen/categories_list_item_height</dimen>
+    <dimen name="settings_item_height">50dp</dimen>
+
+    <dimen name="margin_medium">12dp</dimen>
+    <dimen name="margin_large">16dp</dimen>
+
+    <dimen name="text_extra_large">24sp</dimen>
+    <dimen name="text_large">20sp</dimen>
+    <dimen name="text_medium">16sp</dimen>
+    <dimen name="text_small">14sp</dimen>
+    <dimen name="text_extra_small">12sp</dimen>
+    <dimen name="text_caption">10sp</dimen>
+
+    <dimen name="video_player_close_button">50dp</dimen>
+</resources>

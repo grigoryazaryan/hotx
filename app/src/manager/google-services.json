@@ -1,0 +1,66 @@
+{
+  "project_info": {
+    "project_number": "1070236222717",
+    "firebase_url": "https://h45.firebaseio.com",
+    "project_id": "h45",
+    "storage_bucket": "h45.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1070236063717:android:3388bf125a3d7bce",
+        "android_client_info": {
+          "package_name": "www.zzz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1070236063717-oolpur6lc0sr2rdmbgmb39akthmb41jk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1070236063717:android:801ee9cac632a708",
+        "android_client_info": {
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1070236063717-oolpur6lc0sr2rdmbgmb39akthmb41jk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
